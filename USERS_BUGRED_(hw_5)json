@@ -1,0 +1,460 @@
+{
+	"info": {
+		"_postman_id": "714bb08a-1c59-4f00-8ec2-2f9821c714cf",
+		"name": "Users.bugred",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23958532"
+	},
+	"item": [
+		{
+			"name": "doRegister_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"testraw@mail.ru\",\r\n    \"name\": \"testapi\",\r\n    \"password\": \"qwerty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doRegister_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"testraw2@mail.ru\",\r\n    \"name\": \"testapi2\",\r\n    \"password\": \"qwerty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"testraw3@mail.ru\",\r\n    \"name\": \"testapi3\",\r\n    \"tasks\": [\r\n        55\r\n    ],\r\n    \"companies\": [\r\n        55\r\n    ],\r\n    \"hobby\": \"xxxhub\",\r\n    \"adres\": \"hero_city\",\r\n    \"name1\": \"superman\",\r\n    \"surname\": \"avenger\",\r\n    \"fathername1\": \"ctulhu\",\r\n    \"cat\": \"tom\",\r\n    \"dog\": \"alpha\",\r\n    \"parrot\": \"jacksparrow\",\r\n    \"cavy\": \"hahaha\",\r\n    \"hamster\": \"overlord\",\r\n    \"squirrel\": \"bugaga\",\r\n    \"phone\": \"123456789012\",\r\n    \"inn\": \"123456789012\",\r\n    \"gender\": \"m\",\r\n    \"birthday\": \"01.01.1999\",\r\n    \"date_start\": \"11.11.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createuser",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user with tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"testraw4@mail.ru\",\r\n    \"name\": \"testapi4\",\r\n    \"tasks\": [{\r\n        \"title\": \"step_one\",\r\n        \"description\": \"open\"\r\n    }\r\n    ],\r\n    \"companies\": [\r\n        55\r\n    ],\r\n    \"hobby\": \"xxxhub\",\r\n    \"adres\": \"hero_city\",\r\n    \"name1\": \"superman\",\r\n    \"surname\": \"avenger\",\r\n    \"fathername1\": \"ctulhu\",\r\n    \"cat\": \"tom\",\r\n    \"dog\": \"alpha\",\r\n    \"parrot\": \"jacksparrow\",\r\n    \"cavy\": \"hahaha\",\r\n    \"hamster\": \"overlord\",\r\n    \"squirrel\": \"bugaga\",\r\n    \"phone\": \"123456789012\",\r\n    \"inn\": \"123456789012\",\r\n    \"gender\": \"m\",\r\n    \"birthday\": \"01.01.1999\",\r\n    \"date_start\": \"11.11.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createuserwithtasks",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createuserwithtasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"testraw4@mail.ru\",\r\n    \"name\": \"testapi4\",\r\n    \"tasks\": [{\r\n        \"title\": \"step_one\",\r\n        \"description\": \"open\"\r\n    }\r\n    ],\r\n    \"companies\": [\r\n        55\r\n    ],\r\n    \"hobby\": \"xxxhub\",\r\n    \"adres\": \"hero_city\",\r\n    \"name1\": \"superman\",\r\n    \"surname\": \"avenger\",\r\n    \"fathername1\": \"ctulhu\",\r\n    \"cat\": \"tom\",\r\n    \"dog\": \"alpha\",\r\n    \"parrot\": \"jacksparrow\",\r\n    \"cavy\": \"hahaha\",\r\n    \"hamster\": \"overlord\",\r\n    \"squirrel\": \"bugaga\",\r\n    \"phone\": \"123456789012\",\r\n    \"inn\": \"123456789012\",\r\n    \"gender\": \"m\",\r\n    \"birthday\": \"01.01.1999\",\r\n    \"date_start\": \"11.11.1999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/createuserwithtasks",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"createuserwithtasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Oct 2022 12:58:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"testapi4\",\n    \"name1\": \"superman\",\n    \"hobby\": \"xxxhub\",\n    \"fathername1\": \"ctulhu\",\n    \"cat\": \"tom\",\n    \"dog\": \"alpha\",\n    \"parrot\": \"jacksparrow\",\n    \"cavy\": \"hahaha\",\n    \"hamster\": \"overlord\",\n    \"squirrel\": \"bugaga\",\n    \"phone\": \"123456789012\",\n    \"adres\": \"hero_city\",\n    \"gender\": \"m\",\n    \"date_start\": {\n        \"sec\": 942267600,\n        \"usec\": 0\n    },\n    \"date_updated\": {\n        \"sec\": 1666789085,\n        \"usec\": 827000\n    },\n    \"birthday\": {\n        \"sec\": 915138000,\n        \"usec\": 0\n    },\n    \"role\": [\n        \"user\"\n    ],\n    \"date_register\": {\n        \"sec\": 1666789085,\n        \"usec\": 827000\n    },\n    \"date\": \"2022-10-26\",\n    \"email\": \"testraw4@mail.ru\",\n    \"by_user\": \"manager@mail.ru\",\n    \"companies\": [\n        {\n            \"name\": \"company509\",\n            \"id\": 55\n        }\n    ],\n    \"tasks\": [\n        {\n            \"name\": \"step_one\",\n            \"id\": 67\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"company_name\": \"testAPI2022\",\r\n  \"company_type\": \"ОАО\",\r\n  \"company_users\": [\r\n    \"testraw@mail.ru\",\r\n    \"testraw2@mail.ru\"\r\n  ],\r\n  \"email_owner\": \"testraw3@mail.ru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createcompany",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createcompany"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"company_name\": \"testAPI2022\",\r\n  \"company_type\": \"ОАО\",\r\n  \"company_users\": [\r\n    \"testraw@mail.ru\",\r\n    \"testraw2@mail.ru\"\r\n  ],\r\n  \"email_owner\": \"testraw3@mail.ru\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/createcompany",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"createcompany"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Oct 2022 13:03:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"success\",\n    \"id_company\": 77,\n    \"company\": {\n        \"name\": \"testAPI2022\",\n        \"type\": \"ОАО\",\n        \"inn\": \"\",\n        \"ogrn\": \"\",\n        \"kpp\": \"\",\n        \"phone\": \"\",\n        \"adress\": \"\",\n        \"users\": [\n            \"testraw@mail.ru\",\n            \"testraw2@mail.ru\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add avatar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/C:/Users/wootm/Desktop/IMG-6604.JPG"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/addavatar?email=testraw@mail.ru",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"addavatar"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "testraw@mail.ru"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/wootm/Desktop/IMG-6604.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/addavatar?email=testraw@mail.ru",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"addavatar"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "testraw@mail.ru"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Oct 2022 13:24:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"ok\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Del avatar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/deleteavatar?email=testraw@mail.ru",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"deleteavatar"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "testraw@mail.ru"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
